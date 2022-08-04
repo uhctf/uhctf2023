@@ -1,3 +1,7 @@
+# Fishy Subdomain
+
+- Category: OSINT
+
 I made a super secure secret subdomain on my website ctf.wardsegers.be. Can you find it?
 
 **Note**: hosting for this website is on the public Internet. DDoS and attacking the infra is explicitly forbidden and not required to solve the challenge!
