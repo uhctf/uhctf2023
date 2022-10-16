@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>ObfuDrive</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
+
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Password modal -->
+    <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="passwordModalLabel">Decryption password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input id="passwordInput" type="password" class="form-control"
+                            placeholder="Password" aria-label="Password"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <a id="passwordConfirm" type="button" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload modal -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="uploadModalLabel">Upload unavailable</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uploading files is currently unavailable due to security considerations.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main body -->
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="/static/cloud.png" width="60em" height="48em" />
+                    <span class="fs-4"><b>ObfuDrive</b> - obfuscated cloud storage</span>
+                </a>
+                <span class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></span>
+                <a data-bs-toggle="modal" href="#uploadModal" class="btn btn-primary">Upload</a>
+            </header>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <p>Everything is public on ObfuDrive, from our source code to your files! Do not worry,
+                your files
+                are encrypted using our obfuscated key generator.</p>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">File Name</th>
+                        <th scope="col">Owner</th>
+                        <th scope="col" style="width: 6em">Size (B)</th>
+                        <th scope="col" style="width: 1em">Encrypted</th>
+                        <th scope="col" style="width: 1em">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">app.py</th>
+                        <td>ObfuDrive Dev</td>
+                        <td style="width: 6em">2.1k</td>
+                        <td style="width: 1em">🔓</td>
+                        <td style="width: 1em"><a href="javascript: download('app.py', false)"
+                                class="btn btn-primary" style="width: 100%">Download</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">hacked_you.gif.encrypted</th>
+                        <td>LeetMemer420</td>
+                        <td style="width: 6em">1.5M</td>
+                        <td style="width: 1em">🔐</td>
+                        <td style="width: 1em"><a data-bs-toggle="modal" href="#passwordModal"
+                                data-bs-file-name="hacked_you.gif.encrypted"
+                                class="btn btn-outline-primary" style="width: 100%">Decrypt</a>
+                    </tr>
+                    <tr>
+                        <th scope="row">keygen</th>
+                        <td>ObfuDrive Dev</td>
+                        <td style="width: 6em">27k</td>
+                        <td style="width: 1em">🔓</td>
+                        <td style="width: 1em"><a href="javascript: download('keygen', false)"
+                                class="btn btn-primary" style="width: 100%">Download</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">rip_chill_cat.jpg.encrypted</th>
+                        <td>Tombili</td>
+                        <td style="width: 6em">145k</td>
+                        <td style="width: 1em">🔐</td>
+                        <td style="width: 1em"><a data-bs-toggle="modal" href="#passwordModal"
+                                data-bs-file-name="rip_chill_cat.jpg.encrypted"
+                                class="btn btn-outline-primary" style="width: 100%">Decrypt</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">the_flag.txt.encrypted</th>
+                        <td>Kibouo</td>
+                        <td style="width: 6em">80</td>
+                        <td style="width: 1em">🔐</td>
+                        <td style="width: 1em"><a data-bs-toggle="modal" href="#passwordModal"
+                                data-bs-file-name="the_flag.txt.encrypted"
+                                class="btn btn-outline-primary" style="width: 100%">Decrypt</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copyright text-center py-3">© 2023 Copyright: ObfuDrive
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+<script>
+    const password_modal = document.getElementById('passwordModal');
+    const password_input = document.getElementById('passwordInput');
+
+    password_modal.addEventListener('shown.bs.modal', function () {
+        // get requested file_name from Button that triggered the modal
+        const file_name = event.relatedTarget.getAttribute('data-bs-file-name');
+        // set modal's action
+        document.getElementById('passwordConfirm').href = `javascript: download('${file_name}', true)`;
+
+        password_input.focus();
+    });
+
+    function download(file_name, encrypted) {
+        try {
+            bootstrap.Modal.getInstance(password_modal).hide();
+        } catch (_) {
+        }
+
+        password = encrypted ? password_input.value : '';
+
+        // use iframe because XMLHttpRequest does not allow downloading files
+        // please don't do this in production kids. Aside from not cleaning up the elements, the password is passed as a GET param and visible in HTML...
+        const downloader_iframe = document.createElement('iframe');
+        downloader_iframe.style.position = "absolute";
+        downloader_iframe.style.left = "-10000px";
+        downloader_iframe.src = `/uploads/${file_name}?decrypt=${encrypted}&password=${password}`;
+        document.body.appendChild(downloader_iframe);
+    }
+</script>
+
+</html>

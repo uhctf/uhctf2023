@@ -1,0 +1,5 @@
+src/keygen/keygen
+src/website/password
+src/website/uploads/*
+!src/website/uploads/rip_chill_cat.jpg
+!src/website/uploads/hacked_you.gif
