@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, send_file, abort
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 from subprocess import Popen, PIPE
 import io
@@ -9,6 +11,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 
 app = Flask(__name__, static_folder='static')
+limiter = Limiter(app, key_func=get_remote_address)
 
 
 def get_aes_key(password, encrypted_file_name):
@@ -45,6 +48,8 @@ def index():
 
 
 @app.route('/uploads/<file_name>', methods=['GET'])
+# Prevent password brute-forcing by rate limiting the amount of requests per time unit.
+@limiter.limit("10/minute")
 def download_file(file_name):
     # GET parameters
     decrypt = request.values.get('decrypt') in ['True', 'true']
