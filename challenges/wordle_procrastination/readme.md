@@ -34,7 +34,7 @@
 I use a little script to play my favorite word guessing game: Wordle.
 While playing one night, I was reminded that I was supposed to generate flags for the CTF... so I just rewrote the script to generate a flag!
 Anyway, I got a pretty awful result that day using my script 😟
-
+```
 Wordle 496 9/6
 
 ⬛⬛⬛⬛🟨
@@ -46,5 +46,5 @@ Wordle 496 9/6
 🟨⬛🟨🟩🟨
 🟩🟨🟩🟩🟨
 🟩🟩🟩🟩🟩
-
+```
 Such a sneaky word!
