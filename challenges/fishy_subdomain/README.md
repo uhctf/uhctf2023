@@ -38,9 +38,11 @@ I made a super secure secret subdomain on my website ctf.wardsegers.be. Can you 
 
 This was set up using a Cpanel website because I’m lazy and I had it at my disposal already.
 1. Have a base domain (e.g. challenge.yourdomain.tld). Host folder src_base here using an Apache server (or setup HTTPS redirects manually)
-1. Have a subdomain of that domain (e.g.). Host folder src_sub here using an Apache server (or setup HTTPS redirects manually)
+1. Have a subdomain of that domain (e.g. subdomainthatisdifficulttoguess.challenge.yourdomain.tld). Host folder src_sub here using an Apache server (or setup HTTPS redirects manually)
 1. Configure HTTPS for both subdomains with separate certs (to make the challenge not too easy)
 1. Check on crt.sh if the setup works and you can find your subdomain.
+
+**Update**: I had to move the subdomain away from the Cpanel, as it made the certificates overlap. Consider separating hosting of the two sites to make sure your hosting doesn't optimize certificates.
 
 # Write-up
 
