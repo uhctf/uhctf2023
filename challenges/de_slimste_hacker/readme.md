@@ -1,7 +1,5 @@
 # De Slimste Hacker
 
-NOTE: THE CHALLENGE IS READY, WE ONLY NEED TO COME UP WITH SOME INTERESTING QUESTIONS...
-
 <!-- crypto, forensics, osint, reversing, stegano, websec, misc -->
 * Category: **Miscellaneous**
 

@@ -8,85 +8,85 @@
         "answer": "1996",
         "source": "https://defcon.org/html/links/dc-ctf-history.html"
     },
-    "Question 2": {
+    "Which public broadcaster was the first to deploy MPEG-DASH?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "VRT",
+            "NPO",
+            "RTBF"
         ],
-        "answer": "B",
-        "source": ""
+        "answer": "VRT",
+        "source": "https://www.ebu.ch/news/2012/07/ebu-initiates-first-large-scale"
     },
-    "Question 3": {
+    "Which attack replicates itself in order to spread?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "Trojan",
+            "Ransomware",
+            "Worm"
         ],
-        "answer": "C",
-        "source": ""
+        "answer": "Worm",
+        "source": "https://en.wikipedia.org/wiki/Computer_worm"
     },
-    "Question 4": {
+    "Which protocol is the oldest?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "UDP",
+            "TCP",
+            "QUIC"
         ],
-        "answer": "B",
-        "source": ""
+        "answer": "TCP",
+        "source": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
     },
-    "Question 5": {
+    "Which is the broadcast address in this network: 172.16.24.0/22": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "172.16.24.255",
+            "172.16.27.255",
+            "172.16.255.255"
         ],
-        "answer": "A",
-        "source": ""
+        "answer": "172.16.27.255",
+        "source": "Just do the maths ;)"
     },
-    "Question 6": {
+    "Which encryption algorithm is asymmetric?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "AES",
+            "3DES",
+            "RSA"
         ],
-        "answer": "C",
-        "source": ""
+        "answer": "RSA",
+        "source": "https://en.wikipedia.org/wiki/RSA_(cryptosystem)"
     },
-    "Question 7": {
+    "The webserver replies with code 418. What does this mean?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "I'm a teapot",
+            "Payment Required",
+            "Payload Too Large"
         ],
-        "answer": "C",
-        "source": ""
+        "answer": "I'm a teapot",
+        "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418"
     },
-    "Question 8": {
+    "What is true about IPoAC?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "The protocol is low-latency",
+            "Carriers can get attacked by birds of prey",
+            "The packet loss ratio is low"
         ],
-        "answer": "B",
-        "source": ""
+        "answer": "Carriers can get attacked by birds of prey",
+        "source": "https://datatracker.ietf.org/doc/html/rfc2549"
     },
-    "Question 9": {
+    "On the first day of Christmas, technology gave to me:": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "A database with a broken b-tree",
+            "A computer science degree",
+            "A corrupted MP3"
         ],
-        "answer": "A",
-        "source": ""
+        "answer": "A database with a broken b-tree",
+        "source": "https://datatracker.ietf.org/doc/html/rfc1882"
     },
-    "Question 10": {
+    "What does shortening an IPv6 address mean?": {
         "possible_answers": [
-            "A",
-            "B",
-            "C"
+            "Converting 8 groups of 4 hexidecimal numbers into a valid IPv4 address",
+            "Removing unused groups of hexadecimal numbers",
+            "Removing a group of only 0's"
         ],
-        "answer": "A",
-        "source": ""
+        "answer": "Removing a group of only 0's",
+        "source": "https://datatracker.ietf.org/doc/html/rfc4291#section-2.2"
     }
 }
