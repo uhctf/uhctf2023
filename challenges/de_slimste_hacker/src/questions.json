@@ -1,0 +1,92 @@
+{
+    "When did the first CTF take place?": {
+        "possible_answers": [
+            "1996",
+            "2000",
+            "2003"
+        ],
+        "answer": "1996",
+        "source": "https://defcon.org/html/links/dc-ctf-history.html"
+    },
+    "Question 2": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "B",
+        "source": ""
+    },
+    "Question 3": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "C",
+        "source": ""
+    },
+    "Question 4": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "B",
+        "source": ""
+    },
+    "Question 5": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "A",
+        "source": ""
+    },
+    "Question 6": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "C",
+        "source": ""
+    },
+    "Question 7": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "C",
+        "source": ""
+    },
+    "Question 8": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "B",
+        "source": ""
+    },
+    "Question 9": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "A",
+        "source": ""
+    },
+    "Question 10": {
+        "possible_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "answer": "A",
+        "source": ""
+    }
+}
