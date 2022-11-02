@@ -62,6 +62,13 @@ while not found:
 
 	guesses.append(guess)
 	cv = get_correctness(guess)
+
+	cvs = "".join(map(str, cv))
+	cvs = cvs.replace('0', '⬛')
+	cvs = cvs.replace('1', '🟨')
+	cvs = cvs.replace('2', '🟩')
+	print(cvs)
+
 	for i in range(len(guess)):
 		if cv[i] > 0 and not guess[i] in correct:
 			correct.append(guess[i])
