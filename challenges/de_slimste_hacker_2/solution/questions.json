@@ -1,0 +1,42 @@
+{
+    "What is the abbreviation of exclusive disjunction? (3)": {
+        "answer": "XOR",
+        "source": "https://en.wikipedia.org/wiki/Exclusive_or"
+    },
+    "What does IV mean in terms of cryptography? (21)": {
+        "answer": "Initialization Vector",
+        "source": "https://en.wikipedia.org/wiki/Initialization_vector"
+    },
+    "In what year was RC4 designed? (yyyy) (4)": {
+        "answer": "1987",
+        "source": "https://en.wikipedia.org/wiki/RC4"
+    },
+    "Which protocol is used for HTTPS? (3)": {
+        "answer": "TLS",
+        "source": "https://en.wikipedia.org/wiki/HTTPS"
+    },
+    "ROT13: \"Terng wbo!\" (10)": {
+        "answer": "Great job!",
+        "source": "Just do the maths ;)"
+    },
+    "Which Roman general used encryption? (13)": {
+        "answer": "Julius Caesar",
+        "source": "https://en.wikipedia.org/wiki/Caesar_cipher"
+    },
+    "How many rounds does DES have? (2)": {
+        "answer": "16",
+        "source": "https://en.wikipedia.org/wiki/Data_Encryption_Standard"
+    },
+    "Who designed Blowfish? (14)": {
+        "answer": "Bruce Schneier",
+        "source": "https://en.wikipedia.org/wiki/Blowfish_(cipher)"
+    },
+    "For what is PGP the abbreviation? (19)": {
+        "answer": "Pretty Good Privacy",
+        "source": "https://en.wikipedia.org/wiki/Pretty_Good_Privacy"
+    },
+    "Base64: \"QWxtb3N0IHRoZXJlIQ==\" (13)": {
+        "answer": "Almost there!",
+        "source": "Just do the maths ;)"
+    }
+}
