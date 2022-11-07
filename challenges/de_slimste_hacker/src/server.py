@@ -42,13 +42,7 @@ def multi_threaded_client(connection, addr):
     all_correct = True
 
     # Send intro
-    connection.sendall(str.encode("""Wow, you made it to the final round!
-Think about all the fame you'd get if you win this one.
-However, your opponent has taken this personal.
-Some say he never blinks, and that he roams around the woods at night foraging for wolves.
-And that he's scared of Belgians. Or was it bells?
-Anyway, all we know is he’s called the Stig.
-Press <Enter> to continue\n"""))
+    connection.sendall(str.encode("Wow, you made it to the final round! Think about all the fame you'd get if you win this one. However, your opponent has taken this personal. Some say he never blinks, and that he roams around the woods at night foraging for wolves. And that he's scared of Belgians. Or was it bells? Anyway, all we know is he’s called the Stig."))
 
     # Wait for some input, we don't really care what it is
     data = connection.recv(2048)
