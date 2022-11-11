@@ -1,0 +1,5 @@
+We have managed to extract Kim-Jong Un's nuclear power door code by using Github's co-pilot function.
+We are 100% certain that the North Korean system runs exactly the same code. 
+But we do need the right secret key to call the function openNuclearPowerDoor()!
+
+Tip: There is only 1 way to get a valid secret key. Brute-forcing is not necessary, and highly discouraged.

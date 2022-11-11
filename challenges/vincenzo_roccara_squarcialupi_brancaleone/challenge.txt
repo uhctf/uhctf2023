@@ -1,0 +1,11 @@
+Good evening. My name is Angelo Quadrallupo and I am here to defend my client Giuseppe Calzanoni at all cost.
+He has contacted me to proof his innocent in this murder case. 
+The police suspects my client that he killed the maffia boss of Sicily, Vincenzo Roccarà Squarcialupi Brancaleone.
+
+They suspect this because of this photo that someone took, saying that this person was sitting next right to the killer.
+But I am absolutely sure that my client, Giuseppe, did not commit the murder. In order to proof that, we have to first find the date on which this picture was taken.
+Can you please help my client to proof his innoncence ?
+
+Note: you only have one chance of providing the right date when this picture was taken. This should be in the format of YYMMDD. 
+After a fail attempt, the challenge will be closed for your team.
+
