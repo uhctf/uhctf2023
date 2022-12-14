@@ -5,7 +5,9 @@ This challenge is a sequal to the challenge `De Slimste Hacker` and is a combina
 The setup of the challenge is fairly simple: there are 10 questions (which do never change) with fairly easy answers: they can usually be found with just one single search in your favorite search engine. So, after running once, the contestants can gather the answers to the questions. However, everything is encrypted. So first, the encryption needs to be broken.
 
 The description of the challenge is the following:
-```Wait, what? Another round?! Wow, that's so not cool. I would've imagined that the final round would be the final round. But, as I said before: your opponent has taken this personal. Some say that he’s a CTR experiment that went wrong, and that he only speaks exclusive, or plain-text. And that he likes to be answered in the same language. And that he uses 16 bytes to shift. All we know is he’s not the Stig, but he is the Stig’s Cryptographic Cousin.```
+```
+Wait, what? Another round?! Wow, that's so not cool. I would've imagined that the final round would be the final round. But, as I said before: your opponent has taken this personal. Some say that he’s a CTR experiment that went wrong, and that he only speaks exclusive, or plain-text. And that he likes to be answered in the same language. And that he uses 16 bytes to shift. All we know is he’s not the Stig, but he is the Stig’s Cryptographic Cousin.
+```
 In here, there are a few hints, like `CTR`, `exclusive, or` (exclusive or/XOR), hinting to AES encryption with CTR mode. Additionally, similar to the previous `De Slimste Hacker` challenge, the challenge description is first being sent hinting to a known-plaintext attack.
 
 Using these keywords, it is possible to find the next CTF Writeup:
