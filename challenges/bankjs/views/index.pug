@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    article.panel.is-success 
+        p.panel-heading Welcome #{username}!
+
+        div.panel-block You now have #{balance}BJS remaining in your account.
+
+        a.panel-block() Send money between peeps (soon)
+        a.panel-block(href="/tip") Tip the admin
+
+    form(method="post", action="/logout")
+        button(type="submit") Logout
