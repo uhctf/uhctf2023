@@ -14,15 +14,12 @@ Someone attempted to write a bank application in everyone's favorite programming
 
 # Hints:
 
-25%: general tips on how to get to the solution.
-
-<details><summary>CLICK TO SHOW</summary><ul><ul>
+- 25%: general tips on how to get to the solution. <details><summary>CLICK TO SHOW</summary><ul><ul>
 <li>  If only that dev wouldn't be the TYPE to use JavaScript. Try to look at function signatures and look for stupid JavaScript convertions. Check if everything does what you'd expect it to do.
 </li>
 </ul></ul></details>
 
-50%: gives you the exact line where you can find the solution.
-<details><summary>CLICK TO SHOW</summary><ul><ul>
+- 50%: gives you the exact line where you can find the solution. <details><summary>CLICK TO SHOW</summary><ul><ul>
 <li> tip.js:29 </li>
 </ul></ul></details>
 
