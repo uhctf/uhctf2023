@@ -8,7 +8,6 @@ The steps taken to create the challenge:
 - To Binary
 - To Base64
 - To Hex
-- To Base85 (!-u Alpahbet)
 - Tar
 - Zip
 - Gzip
@@ -23,7 +22,6 @@ So, to find the flag, we can use CyberChef again.
 - Gunzip
 - Unzip
 - Untar
-- From Base85
 - From Hex
 - From Base64
 - From Binary
