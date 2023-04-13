@@ -1,0 +1,18 @@
+html
+  head
+    title bankjs
+    
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(charset="utf-8")
+
+    link(rel="stylesheet", href="/css/bulma.min.css")
+
+  body
+    nav.navbar.is-light(role="navigation", aria-label="main navigation")
+        div.navbar-brand
+            a.navbar-item(href="/")
+                img(src="/logo.svg")
+
+    section.section
+        div.container
+            block content

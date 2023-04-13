@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    article.content
+
+
+    h1 Send a tip to the admin 
+    p Send exactly 1BJS to the admin and they'll give you a flag
+
+    if error
+        div.notification.is-danger #{error}
+    if flag
+        div.notification.is-success Thanks for your tip! Here's a treat: #{flag}
+
+    form(method="post", action="/tip")
+        input.input.is-large.is-rounded(name="amount", placeholder="Amount (in BJS)")
+        button.button.is-medium.is-rounded(type="submit") Send tip
