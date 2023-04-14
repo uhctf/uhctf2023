@@ -9,7 +9,7 @@
 
 <!-- {{FLAG_TYPE}} can be "static" or "regex" -->
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>uhctf{3d_goggles_could_have_helped}</code></li>
+<li>static: <code>UHCTF(dit-dah-dah-F4DE3)</code></li>
 </ul></ul></details>
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
@@ -49,7 +49,7 @@ However, some LEDs still seem to be blinking? It looks very funny though!
 
 <!-- {{FLAG_TYPE}} can be "static" or "regex" -->
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>uhctf{3d_goggles_could_have_helped}</code></li>
+<li>static: <code>UHCTF{c0l0r$}</code></li>
 </ul></ul></details>
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
