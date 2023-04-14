@@ -34,7 +34,8 @@
 We have a very secure completely airgrapped computer! So secure it isn't even plugged in!
 However, some LEDs still seem to be blinking? It looks very funny though!
 
-(Flag format: UHCTF(...))
+(See stage for hardware)
+(Flag format: UHCTF(...) case-insensitive)
 
 
 # Airgapped 2
@@ -73,4 +74,5 @@ However, some LEDs still seem to be blinking? It looks very funny though!
 We have a very secure completely airgrapped computer! So secure it isn't even plugged in!
 However, some LEDs still seem to be blinking? It looks very funny though!
 
-(Flag format: UHCTF{...})
+(See stage for hardware)
+(Flag format: UHCTF{...} case-insensitive)
