@@ -1,7 +1,7 @@
-# {{CHALLENGE_NAME}}
+# Fishy Subdomain
 
 <!-- crypto, forensics, osint, reversing, stegano, websec, misc -->
-* Category: **{{CHALLENGE_CATEGORY}}**
+* Category: **{{OSINT}}**
 
 <!-- * "uhctf{...}": must match regex "uhctf{([a-z0-9]+-)*[0-9a-f]{6}}" -->
 <!-- * "free-form": anything goes, mention in description what to look for -->
@@ -9,7 +9,7 @@
 
 <!-- {{FLAG_TYPE}} can be "static" or "regex" -->
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>uhctf{the-way-to-a-mans-flag-is-trough-the-stomach-4c8095}</code></li>
+<li>static: <code>uhctf{okay-boomer-its-just-a-stupid-button-513a73}</code></li>
 </ul></ul></details>
 
 * Connection Info: **ctf.wardsegers.be**
@@ -24,7 +24,7 @@
 </details></li>
 <li><details>
     <summary><strong>60%</strong>: Will tell you how you can use the mentioned resource to get to it.</summary>
-    Did you know that every certificate that got a certificate at Let's Encrypt is publicly known?
+    Did you know that every certificate that got issued is publicly known?
 </details></li>
 </ul></ul>
 
