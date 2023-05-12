@@ -9,7 +9,7 @@ with open('questions.json') as json_file:
     question_dict = json.load(json_file)
 
 HOST = "0.0.0.0"
-PORT = 2000
+PORT = 8000
 BUFFER_S = 8192
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
