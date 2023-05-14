@@ -1,0 +1,3 @@
+bier, 10
+cola, 5
+snoep, 3
