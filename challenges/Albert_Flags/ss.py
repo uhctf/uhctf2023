@@ -14,7 +14,7 @@ class SelfScanCheckout:
         self.input_entry = tk.Entry(master, width=100, font=("Arial", 18))
         self.input_entry.bind("<Return>", self.add_item)
 
-        self.textbox = tk.Text(master, width=80, state=tk.DISABLED, font=("Arial", 32))
+        self.textbox = tk.Text(master, width=80, state=tk.DISABLED, font=("Arial", 28))
 
         self.welcome_label.pack()
 
@@ -22,7 +22,7 @@ class SelfScanCheckout:
         self.input_label.pack()
         self.input_entry.pack()
 
-        self.input_entry.focus() 
+        self.input_entry.focus()
 
         # Bind Ctrl-Q to exit the program -> disabled so hackers can't exit the program and read the debug log!
         #master.bind("<Control-q>", self.exit_program)
@@ -33,7 +33,7 @@ class SelfScanCheckout:
     def add_item(self, event):
         inp = self.input_entry.get()
 
-        if inp == "End":
+        if inp == "006911010008":
             total = self.calculate_total()
             self.checkout_screen(total)
 
@@ -41,14 +41,14 @@ class SelfScanCheckout:
             self.totalItems+=1
             item_name = self.get_product(inp)
             if item_name != "Unknown product":
-                self.items.append(item_name) 
+                self.items.append(item_name)
 
             self.textbox.config(state=tk.NORMAL) # enable the textbox to insert text
             self.textbox.insert(tk.END, item_name + "\n")
             self.textbox.config(state=tk.DISABLED) # disable the textbox again
             self.input_entry.delete(0, tk.END)
             self.input_entry.focus() # set focus back to the input entry widget
-        
+
     def exit_program(self, event):
         global soft_exit
         soft_exit = False
@@ -129,13 +129,13 @@ class SelfScanCheckout:
         self.input_entry.pack()
         self.input_entry.bind("<Return>", self.add_item)
         self.input_entry.focus() # set focus back to the input entry widget
-        
+
 
 if len(sys.argv) < 2:
     print("No api flag given!\nExitting!!!!1!!")
     exit()
 
-if not sys.argv[1].startswith("UHCTF"):
+if not sys.argv[1].startswith("uhctf"):
     print("Bad api flag given!\nExitting!!!11!")
     exit()
 
