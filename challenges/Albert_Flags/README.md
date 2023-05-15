@@ -9,7 +9,7 @@
 
 <!-- {{FLAG_TYPE}} can be "static" or "regex" -->
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>uhctf{you-did-scan-everything-right-5f7aed</code></li>
+<li>static: <code>uhctf{you-did-scan-everything-right-5f7aed}</code></li>
 </ul></ul></details>
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
@@ -49,7 +49,7 @@ We found a leak of Albert Flags's self checkout kiosk code! We can't access thei
 
 <!-- {{FLAG_TYPE}} can be "static" or "regex" -->
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>UHCTF{really-makes-you-bleep-6f3ac1}</code></li>
+<li>static: <code>uhctf{really-makes-you-bleep-6f3ac1}</code></li>
 </ul></ul></details>
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
