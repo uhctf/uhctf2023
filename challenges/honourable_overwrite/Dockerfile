@@ -13,4 +13,4 @@ RUN sed 's/puts.*/puts("uhctf{8uff3r-0v3rf10w-70-7h3-k1n9d0m-26fa2b}");/g' -i /m
 RUN gcc -g -fno-stack-protector -m32 /main.c -o /honourable_overwrite_with_flag
 
 RUN mkdir -p /attachments/
-CMD cp /honourable_overwrite /attachments/honourable_overwrite && socat tcp-l:1337,reuseaddr,fork system:'/honourable_overwrite_with_flag'
+CMD cp /honourable_overwrite /attachments/honourable_overwrite && socat tcp-l:8000,reuseaddr,fork system:'/honourable_overwrite_with_flag'
