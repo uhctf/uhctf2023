@@ -7,7 +7,7 @@
 <li>static: <code>uhctf{4-50ck3t-15-4-d00r-ad3a21}</code></li>
 </ul></ul></details>
 
-* Connection Info: <ip>:4200
+* Connection Info: <ip>:8000
 
 * Requirements: netcat
 
