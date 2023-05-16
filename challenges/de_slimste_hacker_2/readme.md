@@ -25,8 +25,8 @@ this empty and explain everything in the description instead. -->
 <!-- {{HINT_DESCRIPTION}} explains what exactly the hint will help with -->
 * Hints: <ul><ul>
 <li><details>
-    <summary><strong>25%</strong>: The intro</summary>
-    I rewatched last episode... I think I see a pattern there. Is it the same here? It must be!
+    <summary><strong>25%</strong>: A pattern</summary>
+    I rewatched last episode... I think I see a pattern there in the intro. Is it the same here? It must be!
 </details></li>
 </ul></ul>
 
