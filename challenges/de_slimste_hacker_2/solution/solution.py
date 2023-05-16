@@ -13,7 +13,7 @@ question_dict = {}
 with open('questions.json') as json_file:
     question_dict = json.load(json_file)
 
-HOST = "0.0.0.0"
+HOST = "35.210.207.112"
 PORT = 8001
 BUFFER_S = 8192
 

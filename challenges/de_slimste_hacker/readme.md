@@ -15,7 +15,7 @@
 <!-- If you can give a single link, hostname, or one-line connection
 instructions, use this built-in feature. If things are more complicated, leave
 this empty and explain everything in the description instead. -->
-* Connection Info: **nc {{IP}} {{PORT}}**
+* Connection Info: **nc {{IP}} {{PORT}}** -> **nc 35.210.150.161 8000**
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
 * Credits:

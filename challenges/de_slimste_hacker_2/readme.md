@@ -15,11 +15,20 @@
 <!-- If you can give a single link, hostname, or one-line connection
 instructions, use this built-in feature. If things are more complicated, leave
 this empty and explain everything in the description instead. -->
-* Connection Info: **nc {{IP}} {{PORT}}**
+* Connection Info: **nc {{IP}} {{PORT}}** -> **nc 35.210.207.112 8001**
 
 <!-- Only enter people's first name in lowercase, it will be changed later -->
 * Credits:
     * matthijs
+
+<!-- {{HINT_COST}} is a percentage of the challenge's total value -->
+<!-- {{HINT_DESCRIPTION}} explains what exactly the hint will help with -->
+* Hints: <ul><ul>
+<li><details>
+    <summary><strong>25%</strong>: The intro</summary>
+    I rewatched last episode... I think I see a pattern there. Is it the same here? It must be!
+</details></li>
+</ul></ul>
 
 ## Description
 <!-- HTML can be used here if needed -->

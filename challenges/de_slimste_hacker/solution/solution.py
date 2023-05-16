@@ -8,7 +8,7 @@ question_dict = {}
 with open('questions.json') as json_file:
     question_dict = json.load(json_file)
 
-HOST = "0.0.0.0"
+HOST = "35.210.150.161"
 PORT = 8000
 BUFFER_S = 8192
 
