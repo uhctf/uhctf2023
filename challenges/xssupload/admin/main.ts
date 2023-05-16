@@ -33,7 +33,7 @@ const FLAGS = ['uhctf{axe-the-security-with-two-xes-aka-xss-5fd9a0}', 'uhctf{f1r
                 waitUntil: 'networkidle2',
                 timeout: 15000
             });
-            await page.setCookie({ name: "FLAG", value: FLAGS[Number.parseInt(msg.level) - 1], url: msg.base_url });
+            await page.setCookie({ name: "FLAG", value: FLAGS[Number.parseInt(msg.level)], url: msg.base_url });
             const url = msg.base_url + "/file/" + msg.uuid;
             console.log("looking at " + url);
             await page.goto(url, {

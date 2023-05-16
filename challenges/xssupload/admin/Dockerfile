@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.17
 WORKDIR /app
 ADD package.json /app/
 ADD package-lock.json /app/
