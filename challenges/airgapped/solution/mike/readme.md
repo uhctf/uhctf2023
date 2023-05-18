@@ -18,7 +18,7 @@ read code
 
 `GRGRGRGRGRGBGBRGBGBRGBGRGRGRGRGBRBRGBGRGBGRBGBGRGRBRGBGRGBGRGBRGBGRGRBRGBRBGBRGBRBGRGBGBRGRGBGBRGRBGRBRB`
 
-find solution
+find solution. Each color maps to either 0 or 1, based on the previous color. Because there is no color before the first, the first ('R') is only used as initialisation.
 
 ```py
 b = ''
@@ -43,6 +43,6 @@ for k in 'RGRGRGRGRGRGBGBRGBGBRGBGRGRGRGRGBRBRGBGRGBGRBGBGRGRBRGBGRGBGRGBRGBGRGR
             b += o1
         elif c == 'G':
             b += o2
-    c = k    
+    c = k
 print(b)
 ```

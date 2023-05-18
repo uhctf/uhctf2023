@@ -11,7 +11,7 @@
 char const INSANELY_SECURE_KEY_PARAM[17] = "owo_secwet_kwey?";
 char const TEXT_SEGMENT_HASH[65] = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // replaced post-compilation
 
-void anti_debug()
+void out_of_scope_anti_debug()
 {
     if (ptrace(PTRACE_TRACEME, 0, 1, 0) == -1)
     {
@@ -20,7 +20,7 @@ void anti_debug()
     }
 }
 
-void sha256(char const* const input_bytes, size_t const amount_bytes, char hashed_bytes[65])
+void out_of_scope_sha256(char const* const input_bytes, size_t const amount_bytes, char hashed_bytes[65])
 {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256_CTX    sha256;
@@ -37,7 +37,7 @@ void sha256(char const* const input_bytes, size_t const amount_bytes, char hashe
 
 // load .text segment of self, hash it, and compare to stored hash.
 // https://stackoverflow.com/questions/18418839/how-can-i-get-the-offset-and-size-of-the-text-section-of-a-binary
-void anti_tamper(char const * const program_file)
+void out_of_scope_anti_tamper(char const * const program_file)
 {
     int const self_file = open(program_file, O_RDONLY);
 
@@ -56,7 +56,7 @@ void anti_tamper(char const * const program_file)
     for(size_t i = 0; i < sections_amount; i++) {
         if(!strcmp(string_table + sections_header[i].sh_name, ".text")) {
             char hashed_check_password[65];
-            sha256(self_file_base_ptr + sections_header[i].sh_offset, sections_header[i].sh_size, hashed_check_password);
+            out_of_scope_sha256(self_file_base_ptr + sections_header[i].sh_offset, sections_header[i].sh_size, hashed_check_password);
 
             if (strcmp(TEXT_SEGMENT_HASH, hashed_check_password))
             {
@@ -107,8 +107,8 @@ void keygen(char const param1[32], char const param2[16])
 
 int main(int const argc, char const * const argv[])
 {
-    anti_debug();
-    anti_tamper(argv[0]);
+    out_of_scope_anti_debug();
+    out_of_scope_anti_tamper(argv[0]);
 
     if (argc != 3)
     {

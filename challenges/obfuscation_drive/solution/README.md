@@ -15,8 +15,10 @@ Unencrypted files can be downloaded as is. Encrypted files require a password to
 If we can somehow manage to get the AES key, this code can easily by adapted to decrypt `the_flag.txt.encrypted` that we downloaded earlier.
 
 ### keygen
-`keygen` is, as the name implies, a key generator. As we learned above, it generates an AES key to decrypt files. However, it requires a password to run.
+The `keygen` binary is, as the name implies, a key generator. As we learned above, it generates an AES key to decrypt files. However, it requires a password to run.
 
-We cannot tamper with the binary as it includes anti-debugging and anti-tampering features. (They can by bypassed but this is likely harder than the intended route 😁)
+Looking at the binary in a disassembler (Ghidra), we do notice that the password is only used to "start" the binary. The actual key generation depends on 2 parameters that we know: the file name and a hardcoded key (`owo_secwet_kwey`).
 
-Opening the binary in e.g. Ghidra will allow us to reverse engineer the key generation process. More specifically, we can adapt the `keygen` function to python (see the `solution.py` file). This requires reading some assembly and/or Ghidra's decompiler output.
+We thus want to execute the keygen function somehow. Unfortunately, bypassing the password is not possible. We cannot tamper with the binary as it includes anti-debugging and anti-tampering features. (They can by bypassed but this is likely harder than the intended route 😁)
+
+This forces us to read the assembly and reverse engineer the key generation function's working. More specifically, we can adapt the `keygen` function to python (see the `solution.py` file).

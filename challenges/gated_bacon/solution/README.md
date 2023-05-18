@@ -38,6 +38,13 @@ But looking closer, several things feel off:
 
 This must be the malicious traffic!
 
+### What if there were more HTTP?
+Within a company, it is normal to use a [TLS proxy](https://en.wikipedia.org/wiki/TLS_termination_proxy). Forcing employees to trust the company's self-made CA (Certificate Authority) and the self-signed certificates allows the company to intercept all TLS traffic. A proxy server can then decrypt the secured internet traffic, log it, and re-encrypt it before sending it to the actual destination server. With this setup, a company can log practically all HTTPS traffic as plain, readable HTTP.
+So in a see of HTTP data, how would one determine this traffic to be likely malicious? After all, by using normal looking web server paths, it's trying to disguise as normal web traffic. Actually we'd use the same approach as described above: **look for inconsistencies**.
+For this challenge, an alternative path would have been to filter on only DNS queries. Then, looking at all resolved domains.
+Following screenshot shows all DNS A (IPv4) and AAAA (IPv6) answers. The query is `dns.a || dns.aaaa`. The list is quite short. Looking at the marked entry, we identify a domain with unusual name: `reddid.com`. The attacker seems to have re-used their [typosquatting](https://en.wikipedia.org/wiki/Typosquatting) domain name. ![](./assets/2023-05-18-13-35-09.png)
+The DNS entry contains the C2 server's IP address. Analysis can continue based on this.
+
 ## Getting the flag
 Hackers know that it is impossible to prevent their traffic from being seen. This is why they employ clever tricks to obstruct analysis.
 
@@ -48,3 +55,4 @@ We can also try browsing directly to the IP address of the server  (`http://35.2
 Luckily for us, the redirector is not configured enough. The filter it uses is too simple. We can discover what it checks for by looking for similarities between various HTTP requests to the server, in Wireshark. Filtering for only HTTP traffic sent to the server IP can be done with `ip.dst == 35.206.151.103 && http`. ![](./assets/2023-04-16-21-00-59.png)
 
 Notice how the path of the page, in the "Info" column, always starts with `/c2assets/` (we tried to give a hint here by making it "**c2**assets" instead of only "assets"). This is what the redirector checks for. Combining this with the info of the description that we should look for the `flag.txt` file leads us to checking `http://35.206.151.103/c2assets/flag.txt`, which returns the flag!
+A real redirector would check multiple parameters, such as source IP, user agent, specific HTTP headers, etc.

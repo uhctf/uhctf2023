@@ -19,3 +19,5 @@ This was set up using Cpanel because I’m lazy and I had it at my disposal alre
 By going to ctf.wardsegers.be, you can see that the certificate is from Let’s Encrypt. Hints in the letter indicate (e.g. free since 2014) go to Let's Encrypt. All Let’s Encrypt certificates are public, so a secret subdomain on ctf.wardsegers.be would be publicly listed as well.
 By going to a website (such as crt.sh), you can explore certificates issued for a given domain. In this particular case, by entering ctf.wardsegers.be, you can see a certificate for the subdomain super-duper-dolka-polka-poly-gizmo-domain.ctf.wardsegers.be.
 By visiting the website, you see a page with the flag.
+
+More info at https://en.wikipedia.org/wiki/Certificate_Transparency. It also links to alternatives to crt.sh.

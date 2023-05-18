@@ -1,0 +1,2 @@
+# Solution
+The screenshot is taken with an unpatched Pixel phone. This phone is affected by the Acropalypse bug, which recently made quite an uproar in hacker media. More info at: https://arstechnica.com/gadgets/2023/03/google-pixel-bug-lets-you-uncrop-the-last-four-years-of-screenshots/
